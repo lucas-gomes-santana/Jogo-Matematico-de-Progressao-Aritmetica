@@ -62,4 +62,12 @@ let pa = [];
       }
     }
 
+    function jogarNovamente() {
+        pa = [];
+        indicesOcultos = [];
+        container.innerHTML = "";
+        document.getElementById("resultado").textContent = "";
+        gerarPA();
+    }
+
     gerarPA();
