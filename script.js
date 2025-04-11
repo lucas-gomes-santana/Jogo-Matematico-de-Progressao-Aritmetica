@@ -1,6 +1,6 @@
 let pa = [];
-    let indicesOcultos = [];
-    let container = document.getElementById("paContainer");
+let indicesOcultos = [];
+let container = document.getElementById("paContainer");
 
     function gerarPA() {
       const primeiro = Math.floor(Math.random() * 10) + 1;
@@ -51,13 +51,14 @@ let pa = [];
           input.style.borderColor = "red";
         }
       }
-
       const resultado = document.getElementById("resultado");
+
       if (acertos === indicesOcultos.length) {
-        resultado.textContent = "Parabéns! Você completou a PA corretamente!";
+        resultado.textContent = "Parabéns!Você completou a PA corretamente!";
         resultado.style.color = "green";
-      } else {
-        resultado.textContent = "Algumas respostas estão erradas. Tente novamente!";
+      } 
+      else {
+        resultado.textContent = "Há respostas erradas.Tente novamente!";
         resultado.style.color = "red";
       }
     }
@@ -68,6 +69,10 @@ let pa = [];
         container.innerHTML = "";
         document.getElementById("resultado").textContent = "";
         gerarPA();
+    }
+
+    function recomecarJogo() {
+        location.reload();
     }
 
     gerarPA();
