@@ -8,53 +8,67 @@ body {
     justify-content: center;
   }
 
-  h1 {
-    color: #333;
-  }
+h1 {
+  color: #333;
+}
 
-  .pa-container {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-  }
+.pa-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
 
-  .term, .input-term {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #555;
-    border-radius: 8px;
-    font-size: 24px;
-    text-align: center;
-    line-height: 60px;
-    background-color: white;
-  }
+.term, .input-term {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  background-color: white;
+}
 
-  .input-term {
-    line-height: normal;
-  }
+.input-term {
+  line-height: normal;
+}
 
-  .container-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
+.container-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
 
-  button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-  button:hover {
-    background-color: #218838;
-  }
+button:hover {
+  background-color: #218838;
+}
 
-  .resultado {
-    margin: 20px 0 20px;
-    font-weight: bold;
-    font-size: 20px;
-  }
+.resultado {
+  margin: 20px 0 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Remove setas dos inputs de número (cross-browser) */
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
