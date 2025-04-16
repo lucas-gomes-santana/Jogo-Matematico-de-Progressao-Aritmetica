@@ -59,6 +59,10 @@ button:hover {
   font-size: 20px;
 }
 
+a {
+  margin-top: 80px;
+}
+
 /* Remove setas dos inputs de número (cross-browser) */
 
 /* Chrome, Safari, Edge, Opera */
@@ -135,5 +139,9 @@ input[type=number] {
 
   .resultado {
     font-size: 16px;
+  }
+
+  a {
+    font-size: 0.8rem;
   }
 }
